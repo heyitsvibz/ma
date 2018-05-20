@@ -1,0 +1,90 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/rl.ttf);
+}
+
+* {
+    font-family: myFirstFont;
+}
+	
+.qaz
+{
+	border: 1px solid red;
+}
+.icon
+{
+	color: white!important
+}
+
+.foobar
+{
+	background-color: #222222;
+	color : white;
+	text-transform: uppercase;
+	padding: 15px 0px 15px 0px;
+
+}
+
+.foobar-left
+{
+	margin-bottom: 0px;
+	
+}
+
+.foobar-left>li
+{
+	list-style-type: none;
+	padding: 3px 0px 3px 0px;
+	
+}
+
+.foobar-left>li>a
+{
+	color: white
+}
+
+.forms1
+{
+	margin: 10px 100px 10px 100px;
+}
+
+#about
+{
+	margin: 50px 0px 50px 0px;
+}
+
+.mod1
+{
+	text-align : center;
+}
+
+.card>img
+{
+display: block;
+margin: auto;
+}
+
+.card>.card-body>h4, .card>.card-body>p
+{
+	text-align: center;
+}
+
+.navbar-inverse .navbar-brand
+{
+	color: white!important
+}
+
+/*media QUERIES*/
+@media only screen and (max-width: 600px) {
+
+
+
+} 
+
+
+
