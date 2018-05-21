@@ -79,10 +79,19 @@ margin: auto;
 	color: white!important
 }
 
+.carousel-inner
+{
+	margin-top: 50px
+}
+
+
 /*media QUERIES*/
 @media only screen and (max-width: 600px) {
 
-
+.forms1
+{
+	margin: 10px 10px 10px 10px;
+}
 
 } 
 
