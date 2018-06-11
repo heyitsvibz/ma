@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <title>Sign Up</title>
     <link rel="icon" href="favicon.ico">
-    <meta http-equiv="refresh" content="15">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -134,6 +133,52 @@
 
     <script src="js/jq.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    
+$(function() {
+$("#subs").click(function() {
+//var textcontent = $("#content").val();
+var name = $("#name_form").val();
+var mail1 = $('#email_form').val();
+var state = $("#state_form").val();
+var phone = $("#phone_form").val();
+var pinc = $("#pincode_form").val();
+
+var dataString = 'name1=' + name + '&phone1=' + phone + '&pinc1=' + pinc + '&state1=' + state + '&mail1=' + mail1;
+
+
+if (name == '' || pinc == '') 
+
+{
+alert("Please Fill All Fields");
+}
+else
+{
+// AJAX code to submit form.
+$.ajax({
+type: "POST",
+url: "mail.php",
+data: dataString,
+cache: true,
+success: function(data) {
+  console.log("done");
+  
+
+
+},
+ error: function( ) {
+        
+    }
+});
+
+console.log(dataString); 
+}
+return false;
+});
+});
+
+</script>
+
 
 </body>
 
