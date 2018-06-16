@@ -61,7 +61,7 @@
                             </div>
 
                             <div class="forms1">
-                                <input type="text" class="form-control" id="email_form" name="email_form" placeholder="Your Email Address">
+                                <input type="email" class="form-control" id="email_form" name="email_form" placeholder="Your Email Address">
                             </div>
 
                             <div class="forms1">
@@ -139,12 +139,12 @@ $(function() {
 $("#subs").click(function() {
 //var textcontent = $("#content").val();
 var name = $("#name_form").val();
-var mail1 = $('#email_form').val();
-var state = $("#state_form").val();
 var phone = $("#phone_form").val();
 var pinc = $("#pincode_form").val();
+var state = $("#state_form").val();
+var mail2 = $('#email_form').val();
 
-var dataString = 'name1=' + name + '&phone1=' + phone + '&pinc1=' + pinc + '&state1=' + state + '&mail1=' + mail1;
+var dataString = 'name1=' + name + '&phone1=' + phone + '&pinc1=' + pinc + '&state1=' + state + '&mail2=' + mail2;
 
 
 if (name == '' || pinc == '') 
